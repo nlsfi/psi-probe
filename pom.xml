@@ -357,6 +357,7 @@
 						</includes>
 						<excludes>
 							<exclude>**/Abstract*.java</exclude>
+							<exclude>com/googlecode/psiprobe/tools/WhoisTests.java</exclude>
 						</excludes>
 					</configuration>
 				</plugin>
