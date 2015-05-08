@@ -113,7 +113,7 @@ public abstract class AbstractTomcatContainer implements TomcatContainer {
      */
     public void bindToContext(Context context) 
         throws NamingException {
-		Object token = null;
+		Object token = context;
         ContextBindings.bindClassLoader(context, token, Thread.currentThread().getContextClassLoader());
     }
 	
@@ -124,7 +124,7 @@ public abstract class AbstractTomcatContainer implements TomcatContainer {
      */
     public void unbindFromContext(Context context) 
         throws NamingException {
-		Object token = null;
+		Object token = context;
         ContextBindings.unbindClassLoader(context, token, Thread.currentThread().getContextClassLoader());
     }
 	
